@@ -3,7 +3,7 @@ import Dependencies._
 import ScalacOptions._
 
 val projectName        = "exploring-cats-retry"
-val projectDescription = "Exploring *cats-retry* - A Scala library for retrying actions that can fail"
+val projectDescription = "Exploring cats-retry - A Scala library for retrying actions that can fail"
 
 ThisBuild / fork                   := true
 ThisBuild / turbo                  := true // default: false

@@ -33,6 +33,7 @@ IO(loadedDie.roll())
   .retryingOnFailures(
     policy = RetryPolicies.limitRetries[IO](2),
     wasSuccessful = (i: Int) => IO.pure(i == 6),
+    // onFailure = onFailure
     onFailure = retry.noop[IO, Int]
   )
   .unsafeRunSync()
